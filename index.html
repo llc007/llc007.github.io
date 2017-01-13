@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/animate.min.css" />
     <link rel="stylesheet" href="./css/ionicons.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
   </head>
 
   <body>
@@ -31,10 +33,10 @@
                         <a class="page-scroll" href="#one">Diseño Web</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#two">Soporte</a>
+                        <a class="page-scroll" href="#two">Apps</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#three">Apps</a>
+                        <a class="page-scroll" href="#three">Soporte</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#four">Equipo</a>
@@ -55,98 +57,125 @@
 
     <header id="first">
         <div class="header-content">
-            <div class="inner">
-                <a href="#three" class="page-scroll"><img src="img/logoFenic.png" class="wow bounceInLeft"></a>
+            <div class="inner wow bounceInLeft">
+                <a href="#three" class="page-scroll">
+                    <picture>
+                      <source
+                        media="(min-width: 650px)"
+                        srcset="img/logoFenic.png">
+                      <source
+                        media="(min-width: 465px)"
+                        srcset="img/logoFenic.png">
+                      <img
+                        src="img/logoFenic.png"
+                        alt="logo Fenic">
+                    </picture>
+                <!-- <img src="img/logoFenic.png" class="wow bounceInLeft"> -->
+                </a>
             </div>
         </div>      
     </header>    
 <!--=========================================================================================================================== -->
     <!-- Diseño Web Seccion-->
-     <section id="one" class="no-padding m-bottom-0 p-bottom-0">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p1.png">
-                        <img src="img/p1.png" class="img-responsive" alt="Image 1">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+    <section id="one" class="fondoWeb p-bottom-0 p-top-10">
+        <div class="container-fluid" >
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="titulo">Aun no tienes pagina Web?</h2>
+                    <hr class="primary">
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                  <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p2.png">
-                        <img src="img/p2.png" class="img-responsive" alt="Image 2">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-				<div class="clearfix hidden-lg"> </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p3.png">
-                        <img src="img/p3.png" class="img-responsive" alt="Image 3">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p4.png">
-                        <img src="img/p4.png" class="img-responsive" alt="Image 4">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-				<div class="clearfix hidden-lg"> </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p5.png">
-                        <img src="img/p5.png" class="img-responsive" alt="Image 5">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p6.png">
-                        <img src="img/p6.png" class="img-responsive" alt="Image 6">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
             </div>
-            <div class="container text-center m-top-10 ">
-            <p class="no-padding wow fadeIn">Haz que todo el mundo te conozca! Tu web como siempre la imaginaste </br> <a href="">Cotiza Ahora</a></p>
-                <!-- <a href="#one" class="btn btn-default btn-lg">Di Hola!</a> -->
-            </div>
-            
         </div>
+        <div class="container p-bottom-30">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3 class="colorFuenteApps">Responsive</h3>
+                        <p class="colorFuenteApps">Tu sitio esta adaptado para todo tipo de pantallas</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-social-html5 wow fadeInUp" data-wow-delay=".2s"></i>
+                        <h3 class="colorFuenteApps">Moderno</h3>
+                        <p class="colorFuenteApps">Aprovechamos al maximo la tecnologia para crear sitios modernos</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-android-contacts wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3 class="colorFuenteApps">Cooperativo</h3>
+                        <p class="colorFuenteApps">Te ofrecemos trabajar codo a codo para entregarte el mejor servicio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="autoplay" data-slick='{"arrows": false}'>                
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p1.png">
+                    <img src="img/p1.png" class="img-responsive" alt="Image 1">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="icon-lg ion-ios-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+              <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p2.png">
+                    <img src="img/p2.png" class="img-responsive" alt="Image 2">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="icon-lg ion-ios-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p3.png">
+                    <img src="img/p3.png" class="img-responsive" alt="Image 3">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="icon-lg ion-ios-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p4.png">
+                    <img src="img/p4.png" class="img-responsive" alt="Image 4">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="icon-lg ion-ios-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p5.png">
+                    <img src="img/p5.png" class="img-responsive" alt="Image 5">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="icon-lg ion-ios-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/p6.png">
+                    <img src="img/p6.png" class="img-responsive" alt="Image 6">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="icon-lg ion-ios-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>   
+            </div>           
+        </div> 
     </section>
 <!--=========================================================================================================================== -->
     <!--Galeria de fotos-->
@@ -164,9 +193,68 @@
         </div>
     </div>
 <!--=========================================================================================================================== -->
+<!-- Apps Seccion -->
+    <section id="two" class="fondoApps container-fluid p-top-20">
+    <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <h2 class="text-center titulo">Desarrollo de software</h2>
+                <hr class="estiloHr">
+                <div class="media wow fadeInRight">
+                    <h3 class="colorFuenteApps">Simple</h3>
+                    <div class="media-body media-middle">
+                        <p>Simplifica tu trabajo automatizando procesos que te toman mucho tiempo.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-android-laptop"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeIn">
+                    <h3 class="colorFuenteApps">MultiPlataforma</h3>
+                    <div class="media-left">
+                        <i class="icon-lg ion-social-windows"></i>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>¿Web, Desktop, Mobile? Tu aplicacion esta disponible en todos tus dispositivos.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeInRight">
+                    
+                    <div class="media-body media-middle">
+                        <p>Unete a la revolución! Creamos esa aplicacion que tienes en mente.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-social-android"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeIn">
+                    <h3 class="colorFuenteApps">Microsoft Excel</h3>
+                    <div class="media-left">
+                        <i class="icon-lg ion-clipboard"></i>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Todo tipo de aplicaciones usando Excel, Ordena y organiza tus planillas de datos.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3 class="colorFuenteApps">Dudas?</h3>
+                    <div class="media-body media-middle">
+                        <p>Resuelvelas contactando a un humano.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-social-whatsapp-outline"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+<!--=========================================================================================================================== -->
     <!--Pricing Section-->
-    <section id="two" class="no-padding pricing lightbg p-top-20 m-bottom-0">
+    <section id="three" class=" pricing lightbg p-top-30 m-bottom-0">
         <div class="container">
             <div class="row m-bottom-10">
                 <div class="main_pricing  m-bottom-10">
@@ -243,49 +331,9 @@
             </div><!--End off row-->
         </div><!--End off container -->
     </section> <!--End off Pricing section -->
-<!--=========================================================================================================================== -->
-<!-- Apps Seccion -->
-    <section id="three" class="fondoApps">
- <div class="container-fluid">
-                   <!--<div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="margin-top-0 text-primary">Desarrollo de aplicaciones</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="feature">
-                        <i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="feature">
-                        <i class="icon-lg ion-iphone wow fadeInUp" data-wow-delay=".2s"></i>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="feature">
-                        <i class="icon-lg ion-ios-cloud-outline wow fadeIn" data-wow-delay=".3s"></i>
-                        
-                    </div>
-                </div>
-                <h3>Aplicaciones de escritorio</h3>
-                <p class="text-muted">Your site looks good everywhere</p>
-                <h3>Customizable</h3>
-                <p class="text-muted">Easy to theme and customize with SASS</p>
-                <h3>Consistent</h3>
-                <p class="text-muted">A mature, well-tested, stable codebase</p>
+<!--=========================================================================================================================== 
 
-            </div>-->
-        </div> 
-    </section>
-
-
+ EQUIPO SECCION
 
     <section class="container-fluid" id="four">
         <div class="row">
@@ -347,16 +395,11 @@
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2 class="text-primary">Get Started</h2>
-                <a href="http://www.bootstrapzero.com/bootstrap-template/landing-zero" target="ext" class="btn btn-default btn-lg wow flipInX">Free Download</a>
-            </div>
-            <br>
-            <hr/>
-            <br>
+                
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
-                        <h6 class="wide-space text-center">BOOTSTRAP IS BASED ON THESE STANDARDS</h6>
+                       
                         <div class="col-sm-3 col-xs-6 text-center">
                             <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
                         </div>
@@ -374,13 +417,16 @@
             </div>
         </div>
     </aside>
+    -->
+<!--=========================================================================================================================== -->
+<!-- CONTACT-->
     <section id="last">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
+                    <h2 class="margin-top-0 wow fadeIn titulo">Di Hola!</h2>
                     <hr class="primary">
-                    <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <p class="titulo">Envianos tus dudas y te responderemos a la brevedad</p>
                 </div>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <form class="contact-form row">
@@ -409,9 +455,13 @@
             </div>
         </div>
     </section>
+
+<!--=========================================================================================================================== -->
+<!--Footer -->
     <footer id="footer">
         <div class="container-fluid">
             <div class="row">
+            <!--
                 <div class="col-xs-6 col-sm-3 column">
                     <h4>Information</h4>
                     <ul class="list-unstyled">
@@ -440,18 +490,19 @@
                           <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
                         </div>
                     </form>
-                </div>
-                <div class="col-xs-12 col-sm-3 text-right">
-                    <h4>Follow</h4>
+                </div> -->
+                <div class="text-center">
+                    
                     <ul class="list-inline">
                       <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
                       <li><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
                       <li><a rel="nofollow" href="" title="Dribble"><i class="icon-lg ion-social-dribbble-outline"></i></a></li>
                     </ul>
+                    <span class="center-block text-muted small"><a rel="nofollow" href="http://www.fenic.com">fenic.com</a> 2017</span>
                 </div>
             </div>
             <br/>
-            <span class="pull-right text-muted small"><a href="http://www.bootstrapzero.com">Landing Zero by BootstrapZero</a> ©2015 Company</span>
+            
         </div>
     </footer>
 
@@ -464,5 +515,16 @@
     <script src="./js/jquery.easing.min.js"></script>
     <script src="./js/wow.js"></script>
     <script src="./js/scripts.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+          $('.autoplay').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1700,
+
+        });
+                
+    </script> 
   </body>
 </html>

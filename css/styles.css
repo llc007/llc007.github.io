@@ -29,6 +29,7 @@ hr {
     opacity: 0.09;
     margin-top: 15px;
     margin-bottom: 15px;
+
 }
 
 hr.light {
@@ -239,7 +240,8 @@ header {
     color: #fff;
     width: 100%;
     background-color: #c9c9c9;
-    background-image: url('https://raw.githubusercontent.com/llc007/llc007.github.io/master/img/banner1.jpg');
+    /* background-image: url('http://localhost/lopez/img/banner1.png'); */
+    https://raw.githubusercontent.com/llc007/llc007.github.io/master/img/banner1.jpg 
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -636,11 +638,14 @@ h3 {
     padding-bottom: 0px;
 }  
 .p-top-30 {
-    padding-top: 1.875rem;
+    padding-top: 30px;
 }
 
 .p-top-20 {
     padding-top: 20px;
+}
+.p-top-10 {
+    padding-top: 10px;
 }
 .p-bottom-0 {
     padding-bottom: 0;
@@ -655,11 +660,20 @@ h3 {
 .p-top-90 {
     padding-top: 90px;
 }
+.p-top-110 {
+    padding-top: 150px;
+}
 .p-bottom-30 {
     padding-bottom: 30px;
 }
 .p-left-0 {
     padding-left: 0px;
+}
+.m-right-30 {
+    margin-right: 30px;
+}
+.m-left-30 {
+    margin-left: 30px;
 }
 .m-top-40 {
     margin-top: 40px;
@@ -704,5 +718,19 @@ h3 {
 }
 
 .fondoApps {
-    background-color: #7C0048;
+    background-color: #3c1251;
+}
+
+.fondoWeb {
+    background-color: #1c0739;
+}
+.colorFuenteApps {
+    color: #f3f3f3;
+}
+.estiloHr {
+    border: 1px solid #FFFFFF;
+
+}
+.titulo {
+    color: #FFFFFF;
 }
