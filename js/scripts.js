@@ -31,4 +31,9 @@
        $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
     });
 
+
+
 })(jQuery);
+
+//for Preloader
+

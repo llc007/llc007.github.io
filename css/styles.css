@@ -734,3 +734,7 @@ h3 {
 .titulo {
     color: #FFFFFF;
 }
+
+.grande {
+    font-size: 30px;
+}
