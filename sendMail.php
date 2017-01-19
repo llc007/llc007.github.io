@@ -6,33 +6,29 @@ if(isset($_POST['email'])) {
     $email_to = "
  llc007.1@gmail.com";
  
-    $email_subject = "Tu Asunto de correo";   
+    $email_subject = "Mensaje a la pagina Fenic";   
  
     function died($error) {
- 
-        // si hay algún error, el formulario puede desplegar su mensaje de aviso
- 
-        echo "Lo sentimos, hubo un error en sus datos y el formulario no puede ser enviado en este momento. ";
- 
-        echo "Detalle de los errores.<br /><br />";
+      ?>
+        <div>
+          <h2>ERROR</h2>
+        </div>
         
-        echo $error."<br /><br />";
- 
-        echo "Porfavor corrija estos errores e inténtelo de nuevo.<br /><br />";
-        die();
+        <!-- echo "<html><head></head>"."<body onload=\"javascript:history.back()\">"."</body></html>"; -->
+        
+<?php
+die();
     }
  
     // Se valida que los campos del formulairo estén llenos
  
-    if(!isset($_POST['first_name']) ||
- 
-        !isset($_POST['last_name']) ||
- 
+    if(!isset($_POST['nombre']) || 
+         
         !isset($_POST['email']) ||
  
-        !isset($_POST['telephone']) ||
+        !isset($_POST['fono']) ||
  
-        !isset($_POST['message'])) {
+        !isset($_POST['mensaje'])) {
  
         died('Lo sentimos pero parece haber un problema con los datos enviados.');       
  
@@ -41,15 +37,13 @@ if(isset($_POST['email'])) {
     
     $first_name = $_POST['nombre']; // requerido
  
-    $last_name = $_POST['last_name']; // requerido
- 
     $email_from = $_POST['email']; // requerido
  
     $telephone = $_POST['fono']; // no requerido 
 
-    $message = $_POST['message']; // requerido
+    $message = $_POST['mensaje']; // requerido
  
-    $error_message = "Error";
+    $error_message = "";
 
 //En esta parte se verifica que la dirección de correo sea válida 
     
@@ -71,11 +65,6 @@ if(isset($_POST['email'])) {
  
   }
  
-  if(!preg_match($string_exp,$last_name)) {
- 
-    $error_message .= 'el formato del apellido no es válido.<br />';
- 
-  }
  
   if(strlen($message) < 2) {
  
@@ -83,7 +72,7 @@ if(isset($_POST['email'])) {
  
   }
  
-  if(strlen($error_message) < 0) {
+  if(strlen($error_message) > 0) {
  
     died($error_message);
  
@@ -107,8 +96,7 @@ if(isset($_POST['email'])) {
  
     $email_message .= "Nombre: ".clean_string($first_name)."\n";
  
-    $email_message .= "Apellido: ".clean_string($last_name)."\n";
- 
+     
     $email_message .= "Email: ".clean_string($email_from)."\n";
  
     $email_message .= "Teléfono: ".clean_string($telephone)."\n";
@@ -130,11 +118,7 @@ $headers = 'From: '.$email_from."\r\n".
  
  
  
-<!-- incluye aqui tu propio mensaje de Éxito-->
- 
-Gracias! Nos pondremos en contacto contigo a la brevedad
- 
- 
+
 <?php
  
 }
