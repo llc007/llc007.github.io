@@ -660,6 +660,9 @@ h3 {
 .p-top-90 {
     padding-top: 90px;
 }
+.p-top-60 {
+    padding-top: 60px;
+}
 .p-top-110 {
     padding-top: 150px;
 }
@@ -677,6 +680,9 @@ h3 {
 }
 .m-top-40 {
     margin-top: 40px;
+}
+.m-top-60 {
+    margin-top: 140px;
 }
 
 .m-top-0 {
@@ -738,4 +744,7 @@ h3 {
 
 .grande {
     font-size: 90px;
+}
+.transparente {
+    opacity: 0.6;
 }
